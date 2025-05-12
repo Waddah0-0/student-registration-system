@@ -15,7 +15,7 @@ public class UndoRedoManager {
     private class EnrollmentAction {
         private int studentID;
         private int courseID;
-        private boolean isEnrollment; // true for enroll, false for remove
+        private boolean isEnrollment;
 
         public EnrollmentAction(int studentID, int courseID, boolean isEnrollment) {
             this.studentID = studentID;

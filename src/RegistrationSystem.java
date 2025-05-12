@@ -32,7 +32,6 @@ public class RegistrationSystem {
     }
     public void removeStudent(int studentID) {
         studentsList.remove(studentID);
-        // remove 'studentID' for each course in coursesList
         LinkedList.Node courseHead = coursesList.getHead();
         while (courseHead != null) {
             courseHead.list.remove(studentID);
@@ -42,7 +41,6 @@ public class RegistrationSystem {
     }
     public void removeCourse(int courseID) {
         coursesList.remove(courseID);
-        // remove 'courseID' For each student in studentsList
         LinkedList.Node studentHead = studentsList.getHead();
         while (studentHead != null) {
             studentHead.list.remove(courseID);
